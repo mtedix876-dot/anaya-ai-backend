@@ -45,4 +45,4 @@ Create a detailed image-generation prompt from the user's idea. Preserve identit
   }catch(e){res.status(500).json({error:"Could not create image prompt."});}
 });
 
-app.listen(3000,"0.0.0.0",()=>console.log("Anaya Pro running on http://localhost:3000"));
+const PORT=process.env.PORT||3000; app.listen(PORT,"0.0.0.0",()=>console.log("Anaya Pro running on port "+PORT));
